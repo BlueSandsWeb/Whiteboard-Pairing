@@ -6,7 +6,7 @@ def zeros_to_the_right(arr):
             arr.append(move_item)
             count += 1
     print(arr)
-    return count
+    return len(arr) - count
 
 
 print("Number of non-zero integers: ", zeros_to_the_right([0, 3, 1, 0, -2]))
