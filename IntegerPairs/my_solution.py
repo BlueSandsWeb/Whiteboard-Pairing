@@ -3,7 +3,7 @@ def integerPairs(arr, k):
     printOut = ''
     for i in range(len(arr)):
         for j in range(i+1, len(arr)):
-            if i + j == 11:
+            if i + j == k:
                 answers.append([i, j])
                 if len(printOut) == 0:
                     printOut += f"'{i} {j}'"
@@ -14,4 +14,5 @@ def integerPairs(arr, k):
 
 integerPairs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11 )
 integerPairs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 15 )
+integerPairs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], 20 )
 
