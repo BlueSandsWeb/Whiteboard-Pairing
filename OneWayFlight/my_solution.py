@@ -2,14 +2,11 @@ def reconstructTrip(trip):
     tickets = {}
     for ticket in trip:
         tickets[ticket[0]] = ticket[1]
-    # print(tickets)
     key = "None"
-    value = ''
     arr = []
     for i in range(len(tickets)):
-        value = tickets[key]        // LAX, BHM
-        key = tickets[value]        // SFO, 
-        arr.append(value)
+        key = tickets[key]
+        arr.append(key)
     return arr
 
 
